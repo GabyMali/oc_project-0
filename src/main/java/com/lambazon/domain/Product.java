@@ -53,7 +53,7 @@ public class Product {
 	}
 
 	/**
-	 * Quantité mini 0
+	 * Quantity mini 0
 	 * @param quantity
 	 */
 
@@ -70,8 +70,8 @@ public class Product {
 	}
 
 	/**
-	 * Prix maxx 10000
-	 * Prix mini 0
+	 * Price maxx 10000
+	 * Price mini 0
 	 * @param price
 	 */
 
@@ -87,7 +87,7 @@ public class Product {
 
 	/***
 	 *
-	 * @return le produit de la quantité et du prix pour un article
+	 * @return quantity * price for one item
 	 */
 	public double getInventoryPrice() {
 		InventoryPrice=quantity*price;

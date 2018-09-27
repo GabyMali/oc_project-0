@@ -34,20 +34,20 @@ public class ProductController {
 	}
 
 	/**
-	 * Itération de la fonction ProductRepository dans Maliste pour récuperer la liste du matériel
-	 * Boucle pour récupérer le résultat de la fonction getInventoryPrice de la classe Product
-	 * @return: Total prix*quantité de tous les article de la liste
+	 * Iteration of class ProductRepository for use method product
+	 * Loop for the result of the method getInventoryPrice class Product
+	 * @return: Total price*quantity of all the items in the list
 	 */
 
 
 	private double calculateTotalInventoryAmount() {
 		// TODO fix calculation
 
-		ProductRepository Maliste = new ProductRepository();
+		ProductRepository Mylist = new ProductRepository();
 		double InventoryPrice = 0;
-		for (int i = 1; i <= Maliste.products().size(); i++) {
-			Product a = Maliste.product(i);
-			InventoryPrice += a.getInventoryPrice();
+		for (int i = 1; i <= Mylist.products().size(); i++) {
+			Product item = Mylist.product(i);
+			InventoryPrice += item.getInventoryPrice();
 		}
 			return InventoryPrice;
 
