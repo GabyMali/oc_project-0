@@ -52,6 +52,11 @@ public class Product {
 		return quantity;
 	}
 
+	/**
+	 * Quantité mini 0
+	 * @param quantity
+	 */
+
 	public void setQuantity(int quantity) {
         if (quantity>0){
             this.quantity=quantity;
@@ -64,6 +69,12 @@ public class Product {
 		return price;
 	}
 
+	/**
+	 * Prix maxx 10000
+	 * Prix mini 0
+	 * @param price
+	 */
+
 	public void setPrice(double price) {
 		if (price>1000) {
             this.price = 1000;
@@ -74,6 +85,10 @@ public class Product {
         }
 	}
 
+	/***
+	 *
+	 * @return le produit de la quantité et du prix pour un article
+	 */
 	public double getInventoryPrice() {
 		InventoryPrice=quantity*price;
 		return InventoryPrice;
